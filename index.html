@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Tajawal:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+
+    <style>
+        body{
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Tajawal', sans-serif;
+            background-color: rgb(30,0,77);
+
+        }
+            button{
+                border: none;
+                font-size: 20px;
+                box-shadow: 0px 3px 5px rgba(168,168,168,0.38);
+            }
+            .circular{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                transition: box-shadow 0.2s;
+            }
+            .circular:hover{
+                box-shadow: 0px 3px 15px rgb(96,97,97,0.843); ;
+            }
+            .task{
+                display: flex;
+                background-color: aliceblue;
+                padding: 4px;
+                border-bottom: black 1px solid;
+                transition: box-shadow 0.2s;
+            }
+            .task:hover{
+                box-shadow: 0px 3px 15px rgb(96,97,97,0.843);
+            }
+    </style>
+</head>
+<body>
+    <div style="direction: rtl;">
+    <!--center div -->
+        <div style="display: flex;justify-content: center;align-items: center; ">
+    <!--tasks table-->        
+            <div calss="text-table" style="width: 60%; background-color:rgb(239,239,239);  margin-top: 130px;">
+    <!--header -->            
+                <div style="width: 100%; text-align: center;background-color: rgb(92,52,155);color: aliceblue;padding-top: 8px;padding-bottom: 8px; ">
+                    <h1 style="display: inline;">مهامي</h1>
+                    <button class="circular" style="float: right;margin-right: 10px; background-color: white;">
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+                </div>
+    <!--tasks-->            
+                <div id="tasks" style="padding: 20px;">
+                    <div class="task" > 
+                        <!--tsak info-->
+                        <div style="width: 70%;  ">
+                            <h2>قراءة كتاب</h2>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    calendar_month
+                                </span>
+                                <span>6/8/2023</span>
+                            </div>
+                        </div>
+                        <!--/task info/-->
+
+                        <!--task action-->
+                        <div style="display: flex;justify-content: space-between;align-items: center;width:  20%;">
+                            <button class="circular" style="background-color: rgb(206, 61, 61);color: white;" > 
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 150, 30);color: white;" >
+                                <span class="material-symbols-outlined">
+                                    download_done
+                                </span> 
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 16, 197,0.692);color: white;" > 
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </div>
+                        <!--/task action/-->
+                    </div>
+                </div>
+    <!--tasks-->            
+            </div>
+    <!--tasks table-->         
+        </div>
+    </div>
+    
+</body>
+
+
+
+</html>
